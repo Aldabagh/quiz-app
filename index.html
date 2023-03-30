@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets\style.css">
-    <title>Quiz App</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>Coding Quiz Challenge</title>
 </head>
-
 <body>
-    <h1>Quiz App</h1>
-    <div id="question"></div>
-    <ul id="choices"></ul>
-    <li></li>
-    <button>Start quiz</button>
-    <script src="assets\script.js"></script>
+      <header>
+        <button id="viewHighscoresBtn">View Highscores</button>
+        <p>Time Remaining: <span id="timer"></span></p>
+      </header>
+    <main> <!-- container holding questions and stuff -->
+      <h1 id="title">Coding Quiz Challenge</h1>
+      <p id="instructions">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds!</p>
+      <button id="start-btn">Start Quiz</button><!-- starts quiz -->
+      <div class="quizContainer" id="quiz-container">
+        <p id="question"></p>
+      </div>
+        <ul id="choices">
+          <!-- dynamically list items containing answers -->
+        </ul>
+        <div id="score-container"> <!-- end screen to submit info -->
+          <h1>All Done!</h1> <!-- Confirm end of quiz -->
+          <p>Your final score is: <span id="score">0</span></p>
+          <div id="highscore-input-div"> <!-- forum to enter name to submit score -->
+              <p>Enter Initials:</p>
+              <input type="text" id="fname" name="fname" value="">
+              <button id="submitHighscoreBtn">Submit</button>
+          </div>
+        </div>
+        <div id="display-highscore-div"> <!-- holds the highscores -->
+          <h1>Highscores</h1>
+          <ol>
+              <!-- Dynamic <li> tags go here -->
+          </ol>
+          <button id="goBackBtn">Go Back</button> <!-- Button to return to main screen -->
+          <button id="clearHighscoreBtn">Clear Highscores</button> <!-- Resets local memory -->
+        </div>
+        
+    </main>
+    <footer>
+      <p>footer</p>
+    </footer>
+    <script src="/assets/script.js"></script>
 </body>
-</html>
+</html
+  
