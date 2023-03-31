@@ -18,10 +18,11 @@
       <button id="start-btn">Start Quiz</button><!-- starts quiz -->
       <div class="quizContainer" id="quiz-container">
         <p id="question"></p>
-      </div>
         <ul id="choices">
           <!-- dynamically list items containing answers -->
         </ul>
+      </div>
+        
         <div id="score-container"> <!-- end screen to submit info -->
           <h1>All Done!</h1> <!-- Confirm end of quiz -->
           <p>Your final score is: <span id="score">0</span></p>
@@ -33,7 +34,7 @@
         </div>
         <div id="display-highscore-div"> <!-- holds the highscores -->
           <h1>Highscores</h1>
-          <ol>
+          <ol class="highscore-list">
               <!-- Dynamic <li> tags go here -->
           </ol>
           <button id="goBackBtn">Go Back</button> <!-- Button to return to main screen -->
@@ -42,7 +43,7 @@
         
     </main>
     <footer>
-      <p>footer</p>
+      <p>Made by Ali Aldabagh</p>
     </footer>
     <script src="/assets/script.js"></script>
 </body>
