@@ -16,7 +16,7 @@ header {
     height: 100%;
 }
 
-button {
+button, .timer {
     margin: 3vh;
     width: max-content;
     padding: 0 10px 0 10px;
@@ -39,7 +39,7 @@ main > li:hover {
     color: #f6f7f9;
 }
 
-ul {
+li {
     list-style-type: none;
     
 }
@@ -48,13 +48,13 @@ ul {
 margin-top:10px;
 }
  main {
-  margin: 100px;
+  margin: 10px;
   margin-left:200px ;
   width: 50%;
-  border: 1px solid rgb(12, 112, 170);
-  padding: 100px;
+  /* border: 1px solid rgb(12, 112, 170); */
+  padding: 50px;
   text-align: center;
-  box-shadow: 5px 10px #4752c4;
+  /* box-shadow: 5px 10px #4752c4; */
 }
 
 .highscore-list {
@@ -64,6 +64,14 @@ margin-top:10px;
   border-radius:50%;
   
   color:#fff;
+}
+
+footer {
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
 }
 
 
