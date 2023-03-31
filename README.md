@@ -1,12 +1,10 @@
 # Coding Quiz Challenge
 
-deployment:
+deployment: https://aldabagh.github.io/quiz-app/ 
 
 ## About
 Timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript. It will have a clean, polished, and responsive user interface.
 
-## Demo
-![gif of demo](/assets/images/demo_desktop.gif)
 
 ## Homework Assignment Given Design
 
