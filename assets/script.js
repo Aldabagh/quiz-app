@@ -14,6 +14,8 @@ var initInput = document.getElementById("fname");
 var backBtn = document.getElementById("goBackBtn");
 var clearHighscoreBtn = document.getElementById("clearHighscoreBtn");
 var list = document.querySelector(".highscore-list");
+var timerCount = document.getElementById("timeCount");
+
 
 let globalTimerPreset = 60;
 let currentQuestion = 0;
@@ -85,6 +87,7 @@ function setUpGame() {
   viewHighscoresBtn.style.display = "none"; //default view highscores button is hidden after coming from highscores of previous round
   startBtn.style.display = "block"; //show the start button
   finalScore.style.display = "none";
+  timerCount.style.display = "none";
 }
 
 //display questions and answers
@@ -159,6 +162,7 @@ function startQuiz() { //
   titleTag.style.display = "none";
   finalScore.style.display = "none";
   displayHs.style.display = "none";
+  timerCount.style.display = "block";
   var highscores = JSON.parse(localStorage.getItem("highScores"));
   if (!highscores) {
     localStorage.setItem("highScores", JSON.stringify([])); //if no new highscore create a new array
@@ -176,6 +180,8 @@ function endQuiz() {
     <p>Your score is ${score}.</p>
   `;
   finalScore.style.display = "block";
+  timerCount.style.display = "none";
+  quizContainer.style.display = "none";
 }
 
 setUpGame();
